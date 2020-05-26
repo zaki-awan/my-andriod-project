@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashActivity"
+    android:id="@+id/flash_sales_activity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="-18dp"
+        android:layout_below="@id/flashsalebanner">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundlight_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Winners List >"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="180dp"
+         android:layout_marginBottom="20dp"
+            android:textSize="18sp"/>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/flashsalebanner"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/flashbanner"
+        android:layout_marginTop="-10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Rules"
+        android:textColor="@color/flash_color"
+        android:textStyle="bold"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="65dp"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ipheLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/iphoneLinearLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/counter"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtTimerDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#4a0000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_TimerDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Day"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iphoneLinearLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/counter"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtTimerHours"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#4a0000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_TimerHours"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Hours"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iphoneLinearLayout12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/counter"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtTimerMinutes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#4a0000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_TimerMinutes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Minutes"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iphoneLinearLayout13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/counter"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtTimerSeconds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#4a0000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_TimerSeconds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Seconds"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/product_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/appleicon" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/appleiphone11" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:text="Apple iPhone 11"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTitle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:text="256 GB, BLACK"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/iphonepromainLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/iphoneproLinearLayout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphoneprotxtTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphonepro_txt_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/iphoneproLinearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphoneprotxtTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_pro_txt_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/iphoneproLinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphoneprotxtTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_pro_txt_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/iphoneproLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphoneprotxtTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphonepro_txt_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/apple_product_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/appleicon" />
+
+                <ImageView
+                    android:id="@+id/iphoe_pro_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/apple_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/appleiphonepro" />
+
+                <TextView
+                    android:id="@+id/iphone_pro_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iphoe_pro_imageView"
+                    android:text="Apple iPhone 11 Pro"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/iphoe_pro_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphone_pro_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_pro_imageView"
+                    android:text="256 GB, GOLD"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/iphone_pro_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphoe_pro_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_pro_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/iphone_pro_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphone_pro_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_pro_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone7TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_7_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone7TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_7_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone7TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_7_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone7TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_7_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/apple3_product_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/appleicon" />
+
+                <ImageView
+                    android:id="@+id/iphoe_7_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/apple3_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/iphonesevenplus" />
+
+                <TextView
+                    android:id="@+id/iphone_7_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iphoe_7_imageView"
+                    android:text="Apple iPhone 7 Plus"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/iphoe_7_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphone_7_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_7_imageView"
+                    android:text="32 GB, Face Time GOLD"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/iphone_7_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphoe_7_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_7_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/iphone_7_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphone_7_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_7_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone8plusTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_8plus_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone8plusTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_8plus_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone8plusTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_8plus_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/iphone8plusTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iphone_8plus_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/apple4_product_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/appleicon" />
+
+                <ImageView
+                    android:id="@+id/iphoe_8plus_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/apple4_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/iphoneseightplus" />
+
+                <TextView
+                    android:id="@+id/iphone_8plus_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iphoe_8plus_imageView"
+                    android:text="Apple iPhone 8 Plus"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/iphoe_8plus_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphone_8plus_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_8plus_imageView"
+                    android:text="64 GB, Face Time, SILVER"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/iphone_8plus_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphoe_8plus_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_8plus_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/iphone_8plus_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iphone_8plus_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iphoe_8plus_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/appleipadairTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/apple_ipadair_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/appleipadairTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/apple_ipad_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/appleipadairTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/apple_ipadair_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/appleipadairTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/apple_ipadair_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/apple5_product_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/appleicon" />
+
+                <ImageView
+                    android:id="@+id/apple_ipadair_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/apple5_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/appleipadair" />
+
+                <TextView
+                    android:id="@+id/apple_ipadair_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/apple_ipadair_imageView"
+                    android:text="Apple iPad Air 2019,"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/apple_ipadair_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/apple_ipadair_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/apple_ipadair_imageView"
+                    android:text="10.5 Inch, Cellular, WiFi, 256 GB, GOLD."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/apple_ipadair_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/apple_ipadair_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/apple_ipadair_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/apple_ipadair_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/apple_ipadair_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/apple_ipadair_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweimediapadTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawe_mediapad_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweimediapadTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_mediapad_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweimediapadTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_mediapad_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweimediapadTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_mediapad_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/huawei_product_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+
+                    android:src="@drawable/huaweicon" />
+
+                <ImageView
+                    android:id="@+id/huawei_mediapad_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/huawei_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/huaweimediapad" />
+
+                <TextView
+                    android:id="@+id/huawei_mediapad_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/huawei_mediapad_imageView"
+                    android:text="Huawei Media Pad T5"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/huawei_mediapad_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huawei_mediapad_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/huawei_mediapad_imageView"
+                    android:text="10.1 Inch, 4G, WiFi, 32 GB, BLACK."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/huawei_mediapad_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huawei_mediapad_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/huawei_mediapad_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/huawei_mediapad_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huawei_mediapad_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/huawei_mediapad_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/galaxytabTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/galaxy_tab_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/galaxytabTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/galaxy_tab_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/galaxytabTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/galaxy_tab_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/galaxytabTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/galaxy_tab_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/samsung_product_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+
+
+                    android:src="@drawable/samsungicon" />
+
+                <ImageView
+                    android:id="@+id/galaxy_tab_imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/samsung_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/samsungtab" />
+
+                <TextView
+                    android:id="@+id/galaxy_tab_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/galaxy_tab_imageView"
+                    android:text="Samsung Galaxy Tab A, 2019"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/galaxy_tab_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/galaxy_tab_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/galaxy_tab_imageView"
+                    android:text="10.1 Inches, 4G, WiFi, 32GB, Black"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/galaxy_tab_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/galaxy_tab_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/galaxy_tab_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/galaxy_tab_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/galaxy_tab_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/galaxy_tab_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/philipsledTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/philips_led_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/philipsledTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/philips_led_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/philipsledTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/philips_led_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/philipsledTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/philips_led_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/philips_product_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+
+
+                    android:src="@drawable/philipsicon" />
+
+                <ImageView
+                    android:id="@+id/philips_led_imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/philips_product_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/philpissmarttv" />
+
+                <TextView
+                    android:id="@+id/philips_led_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/philips_led_imageView"
+                    android:text="Philips, 55 Inches, 4K Smart"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/philips_led_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/philips_led_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/philips_led_imageView"
+                    android:text="55PUT6103/56"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/philips_led_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/philips_led_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/philips_led_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/philips_led_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/philips_led_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/philips_led_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweibandwathTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_bandwath_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Day"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweibandwathTimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_bandwath_TimerHours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweibandwathTimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_bandwath_TimerMinutes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/huaweibandwathTimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#4a0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/huawei_bandwath_TimerSeconds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/Huawei_product1_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+
+
+                    android:src="@drawable/huaweicon" />
+
+                <ImageView
+                    android:id="@+id/huawei_bandwath_imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_toRightOf="@id/Huawei_product1_logo"
+                    android:padding="4dp"
+                    android:src="@drawable/huaweibandwatch" />
+
+                <TextView
+                    android:id="@+id/huawei_bandwath_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/huawei_bandwath_imageView"
+                    android:text="Huawei Band 5"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/huawei_bandwath_ShortDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huawei_bandwath_Title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/huawei_bandwath_imageView"
+                    android:text="Tracker, Touch Screen, Silicon, BROWN"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/huawei_bandwath_ViewReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huawei_bandwath_ShortDesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/huawei_bandwath_imageView"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4/5 400 Reviews"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/huawei_bandwath_ViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huawei_bandwath_ViewReviews"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/huawei_bandwath_imageView"
+                    android:text="US $ 20.99"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

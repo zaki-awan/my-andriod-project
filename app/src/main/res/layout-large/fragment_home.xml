@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:id="@+id/main_home_container">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="41dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/sliding_banner_pager"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/category_icon"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/new_arrivals"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="New Arrivals"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Grab_Dollars"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Grab Dollars"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/flash_sales_img"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Flash Sales"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Daily chekin"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/invite_banner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/invitefriend" />
+
+            <ImageView
+                android:id="@+id/new_user_banner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="-40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/newusers" />
+            <LinearLayout
+                android:id="@+id/free_gifts"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-40dp"
+                android:background="@color/background_color"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/New_user_free_gifts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/freegift" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/New_user_free_gifts_Two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/freegift2" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/New_user_view_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/niewmore" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/flashsalebanner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/newbabyflashbanner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:elevation="3dp"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/flash_image"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="4dp"
+                    android:src="@drawable/iphone1" />
+
+                <ImageView
+                    android:id="@+id/flash_img1"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="180dp"
+                    android:padding="4dp"
+                    android:src="@drawable/iphonetwo" />
+
+                <ImageView
+                    android:id="@+id/flash_image2"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/flash_image"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-25dp"
+                    android:padding="4dp"
+                    android:src="@drawable/samsung" />
+
+                <ImageView
+                    android:id="@+id/flash_img3"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/flash_img1"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="-25dp"
+                    android:padding="4dp"
+                    android:src="@drawable/iphonethree" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/new_arrivals_perfumebanner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/perfumebanner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:elevation="3dp"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/womens_fragrances"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="4dp"
+                    android:src="@drawable/womensfrganance" />
+
+                <ImageView
+                    android:id="@+id/mens_perfume"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="180dp"
+                    android:padding="4dp"
+                    android:src="@drawable/mensfrgananace" />
+
+                <ImageView
+                    android:id="@+id/makeup"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/womens_fragrances"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-25dp"
+                    android:padding="4dp"
+                    android:src="@drawable/makeup" />
+
+                <ImageView
+                    android:id="@+id/personal_care"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/mens_perfume"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="-25dp"
+                    android:padding="4dp"
+                    android:src="@drawable/personalcare" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/twodollar_banner"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="-20dp"
+                android:src="@drawable/twodollarbanner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+
+                android:elevation="3dp"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/lip_flower"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:padding="4dp"
+                    android:src="@drawable/fivedollarimg" />
+
+                <ImageView
+                    android:id="@+id/diamond_ring"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="180dp"
+                    android:padding="4dp"
+                    android:src="@drawable/fivedollarimg1" />
+
+                <ImageView
+                    android:id="@+id/remote_lights"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/lip_flower"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-18dp"
+                    android:padding="4dp"
+                    android:src="@drawable/remotelights" />
+
+                <ImageView
+                    android:id="@+id/view_moretwo"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/diamond_ring"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="-18dp"
+                    android:padding="4dp"
+                    android:src="@drawable/niewmore1" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/divier_line"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/hotcategorytitle" />
+
+            <LinearLayout
+                android:id="@+id/hot_category"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-90dp"
+                android:background="@color/hotcategorybackground_color"
+
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/womenfashion" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/womens_plus_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/plussize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/mensfashion" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hot_category2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-35dp"
+                android:background="@color/hotcategorybackground_color"
+
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/aceandbeauty" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-12dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/bags" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-12dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/shoes" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hot_category3"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-45dp"
+                android:background="@color/hotcategorybackground_color"
+
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/electronics" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/home" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/niewmore" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/recomandeddivider_line"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/recomandedtitle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-90dp"
+                android:elevation="3dp"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/carseat_storage"
+                    android:layout_width="160dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/carseatbackstorage" />
+
+                <ImageView
+                    android:id="@+id/cutting_board"
+                    android:layout_width="160dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/cuttingboard" />
+
+                <TextView
+                    android:id="@+id/carseat_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car back seat Storage"
+                    android:textColor="@color/tab_indicator_gray"
+                    android:layout_marginTop="-15dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/carseat_storage"/>
+
+                <TextView
+                    android:id="@+id/carstorage_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/carseat_intro"/>
+
+                <TextView
+                    android:id="@+id/cuttingboard_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car back seat Storage"
+                    android:textColor="@color/tab_indicator_gray"
+                    android:layout_marginTop="-15dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="180dp"
+                    android:layout_below="@id/cutting_board"/>
+
+                <TextView
+                    android:id="@+id/cuttingboard_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="180dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/cuttingboard_intro"/>
+
+                <ImageView
+                    android:id="@+id/i7_blootoohthairbuds"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/i7sbluetoohairbuds"
+                    android:layout_below="@id/carstorage_price"/>
+
+                <ImageView
+                    android:id="@+id/sixpaircolourful_airbuds"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-45dp"
+                    android:src="@drawable/sixpaircolourfulairbuss"
+                    android:layout_below="@id/cuttingboard_price"/>
+
+                <TextView
+                    android:id="@+id/price_i7_blootoohthairbuds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/i7_blootoohthairbuds"/>
+
+                <TextView
+                    android:id="@+id/pricesixpaircolourful_airbuds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/sixpaircolourful_airbuds"/>
+
+                <ImageView
+                    android:id="@+id/twentypcs_makupbrushes"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/twentypcsmakeupbrishes"
+                    android:layout_below="@id/price_i7_blootoohthairbuds"/>
+                <ImageView
+                    android:id="@+id/luxury_jewlryset"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-45dp"
+                    android:src="@drawable/luxuryjewleryset"
+                    android:layout_below="@id/pricesixpaircolourful_airbuds"/>
+
+                <TextView
+                    android:id="@+id/price_twntymakupbrushes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/twentypcs_makupbrushes"/>
+
+                <TextView
+                    android:id="@+id/prices_luxuryjewleryset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/luxury_jewlryset"/>
+                <ImageView
+                    android:id="@+id/walldecor_sticker"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/walldecore"
+                    android:layout_below="@id/price_twntymakupbrushes"/>
+                <ImageView
+                    android:id="@+id/portable_powerbank"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-35dp"
+                    android:src="@drawable/portablemobilepowerbank"
+                    android:layout_below="@id/prices_luxuryjewleryset"/>
+
+                <TextView
+                    android:id="@+id/price_walldecorsticker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/walldecor_sticker"/>
+
+                <TextView
+                    android:id="@+id/prices_portablepowerbank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/portable_powerbank"/>
+
+
+                <ImageView
+                    android:id="@+id/vason_sneakers"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/vesonalnewsneakers"
+                    android:layout_below="@id/price_twntymakupbrushes"/>
+
+                <ImageView
+                    android:id="@+id/maddoll_nailpolish"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-35dp"
+                    android:src="@drawable/maddollnailpolish"
+                    android:layout_below="@id/prices_luxuryjewleryset"/>
+
+                <TextView
+                    android:id="@+id/price_vason_sneakers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/vason_sneakers"/>
+
+                <TextView
+                    android:id="@+id/prices_maddollnailpolish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/maddoll_nailpolish"/>
+
+                <ImageView
+                    android:id="@+id/touchcontrol_bluetooth"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/touchcontrolbluetoothairphone"
+                    android:layout_below="@id/price_vason_sneakers"/>
+
+                <ImageView
+                    android:id="@+id/i9s_airbuds"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-12dp"
+                    android:src="@drawable/i9sairbuds"
+                    android:layout_below="@id/prices_maddollnailpolish"/>
+
+                <TextView
+                    android:id="@+id/price_touchcontrol_bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/touchcontrol_bluetooth"/>
+
+                <TextView
+                    android:id="@+id/prices_i9s_airbuds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-16dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/i9s_airbuds"/>
+
+
+                <ImageView
+                    android:id="@+id/europeanwindow_wallpaper"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/europenwindowwallpaper"
+                    android:layout_below="@id/price_touchcontrol_bluetooth"/>
+
+                <ImageView
+                    android:id="@+id/efroteeth_whitnig_gel"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-45dp"
+                    android:src="@drawable/eferoteethwihtninggel"
+                    android:layout_below="@id/prices_i9s_airbuds"/>
+
+                <TextView
+                    android:id="@+id/price_europeanwindow_wallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/europeanwindow_wallpaper"/>
+
+                <TextView
+                    android:id="@+id/prices_efroteeth_whitnig_gel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/efroteeth_whitnig_gel"/>
+
+                <ImageView
+                    android:id="@+id/makeup_foundation_brush"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/makeuofoundationbrushset"
+                    android:layout_below="@id/price_europeanwindow_wallpaper"/>
+
+                <ImageView
+                    android:id="@+id/magnatic_carphone_holder"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-27dp"
+                    android:src="@drawable/magnaticcarphoneholder"
+                    android:layout_below="@id/prices_efroteeth_whitnig_gel"/>
+
+                <TextView
+                    android:id="@+id/price_makeup_foundation_brush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/makeup_foundation_brush"/>
+
+                <TextView
+                    android:id="@+id/prices_magnatic_carphone_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-22dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/magnatic_carphone_holder"/>
+
+                <ImageView
+                    android:id="@+id/balcony_scenery_wallpaper"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/balconyscenerywallpaper"
+                    android:layout_below="@id/price_makeup_foundation_brush"/>
+
+                <ImageView
+                    android:id="@+id/leader_casual_shoes"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-45dp"
+                    android:src="@drawable/leadremencasualshoes"
+                    android:layout_below="@id/prices_magnatic_carphone_holder"/>
+
+                <TextView
+                    android:id="@+id/price_balcony_scenery_wallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/balcony_scenery_wallpaper"/>
+
+                <TextView
+                    android:id="@+id/prices_leader_casual_shoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-48dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/leader_casual_shoes"/>
+
+
+                <ImageView
+                    android:id="@+id/face_electric_cleaner"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/faceelectriccleansingbrush"
+                    android:layout_below="@id/price_balcony_scenery_wallpaper"/>
+
+                <ImageView
+                    android:id="@+id/braclet_luxury_watch"
+                    android:layout_width="160dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/braceletluxurywatc"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_below="@id/prices_leader_casual_shoes"/>
+
+                <TextView
+                    android:id="@+id/price_face_electric_cleaner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="-50dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="23dp"
+                    android:layout_below="@id/face_electric_cleaner"/>
+
+                <TextView
+                    android:id="@+id/prices_braclet_luxury_watch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3.99"
+                    android:layout_marginTop="-48dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="195dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/braclet_luxury_watch"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

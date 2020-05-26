@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeupActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hot_category"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="@color/hotcategorybackground_color"
+
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/womenfashion" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_background"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/womens_plus_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/product_background"
+                    android:src="@drawable/plussize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+
+                    android:src="@drawable/mensfashion" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

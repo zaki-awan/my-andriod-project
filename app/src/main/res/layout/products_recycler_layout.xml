@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:background="@drawable/product_background">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="160dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/carseatbackstorage" />
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@id/product_image"
+        android:text="TextView" />
+
+
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/product_image"
+        android:layout_marginTop="-10dp"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/produt_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price"
+        android:text="TextView"
+        android:layout_marginTop="-80dp"
+        />
+
+
+
+
+</RelativeLayout>

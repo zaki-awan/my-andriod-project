@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_arrivals_perfumne_color"
+    tools:context=".NewPerfumeArrivalsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/new_arrivals_perfumes_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/new_arrivals_perfumne_color">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+
+            android:background="@color/colorPrimaryDark">
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/new_arrival_perfume_banner"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="-5dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/newperfumebanner"
+        android:background="@color/new_arrivals_perfumne_color"
+        android:layout_below="@id/new_arrivals_perfumes_appbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/womens_perfumes_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2dp"
+        android:layout_below="@id/new_arrival_perfume_banner"/>
+
+</RelativeLayout>
